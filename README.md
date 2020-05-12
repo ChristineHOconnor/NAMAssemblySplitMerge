@@ -1,4 +1,5 @@
-# SplitMerge_Pipeline_NAMassemblies
+# Split Merge Pipeline for the NAM genome assemblies 
+
 Running Meesh's Split Merge pipeline on the maize NAM genome assemblies. Original code here: https://github.com/HirschLabUMN/Split_genes/tree/master/Split_Merge_Pipeline
 
 Where are the data from? 
