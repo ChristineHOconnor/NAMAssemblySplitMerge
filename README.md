@@ -34,7 +34,7 @@ create_gene_name_keys.sh has commands for all 26 assemblies; an example is below
 
 ## Split-Merge pipeline steps 
 
-These are the step as they were run for the NAM genome assembly. For a full description of the original pipeline see this repository: https://github.com/HirschLabUMN/Split_genes/tree/master/Split_Merge_Pipeline
+These are the step as they were run for the NAM genome assembly. There is no need here to worry about finding the longest trancript gene and CDS fasta sequence, as those files were created above using the canonical transcript information. For a full description of the original pipeline see this repository: https://github.com/HirschLabUMN/Split_genes/tree/master/Split_Merge_Pipeline
 
 1) Run nucmer mummer on fasta files. mummer 4.0 beta was used. 
 
