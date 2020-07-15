@@ -397,8 +397,10 @@ for QueryGene in Query_gff_file:
                     #print(gene_split[0])
                     #above line allows me to split on gene name 'suffix' and then on divider character below
                     coordinates.append(gene_split[0].split(gene_char_split)[1])
+                    #2020/07/15: with newest version of gene annotation the gene numbers are 10 apart, instead of 1
+                    #So I changes the int(coordinates[idx]) - int(coordinates[idx-1]) to < 30 from < 3
                     if idx > 0:
-                        if int(coordinates[idx]) - int(coordinates[idx-1]) < 3:
+                        if int(coordinates[idx]) - int(coordinates[idx-1]) < 30:
                             if Syn_genes[idx-1] not in adjacent_genes:
                                 adjacent_genes.append(Syn_genes[idx-1])
                             adjacent_genes.append(Syn_genes[idx])
